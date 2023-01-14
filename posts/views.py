@@ -1,9 +1,10 @@
 from django.http import HttpResponse
 
+
 def index(request):
-    #bodey
+    # bodey
     return HttpResponse('<h1>Hello dear samira</h1>')
 
 
 def home(request):
-    return HttpResponse('<h3>Wellcom to my Website.....')
+    return HttpResponse('<h3>Wellcom to my Website.....</h3>')
