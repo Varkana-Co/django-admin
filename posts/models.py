@@ -1,6 +1,6 @@
 from django.db import models
 
-
+# post model
 class Post(models.Model):
     title= models.CharField(max_length=50)
     text= models.TextField(blank=True)
@@ -11,6 +11,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+        
 
 
 
