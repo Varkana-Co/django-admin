@@ -1,0 +1,8 @@
+
+<title>MY POST</title>
+
+<ul>
+{% for p in posts %}
+    <li><a href="/posts/{{ p.pk }}/">{{ p.pk }}- {{ p.title }}</a></li>
+{% endfor%}
+</ul>

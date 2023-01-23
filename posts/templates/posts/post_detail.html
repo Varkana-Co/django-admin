@@ -1,0 +1,17 @@
+
+
+<title>POST Detail</title>
+
+<h1>{{ post.title }}</h1>
+<p>{{ post.text }}</p>
+<p>{{ post.created_time}}</p>
+<p>{{ post.is_enable}}</p>
+
+
+<ul>
+    {% for comment in comments %}
+        <li>{{ comment.text_comment }} , {{ comment.created_time }}</li>
+    {% endfor %}
+</ul>
+
+<a href='/posts/'>Back to posts</a>
